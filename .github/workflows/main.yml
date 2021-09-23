@@ -7,7 +7,7 @@
    
  jobs:
   build:
-    runs-on: Windows 10
+    runs-on: ubuntu-latest
     steps:
     - name: OWASP ZAP Baseline Scan
   # You may pin to the exact commit or the version.
