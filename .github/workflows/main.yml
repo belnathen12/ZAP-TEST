@@ -1,9 +1,9 @@
  name: site-security-scan
  on: 
-  push:
-   branches: [ master ]
-  pull_request:
-   branches: [ master ]
+   push:
+    branches: [ master ]
+   pull_request:
+    branches: [ master ]
    
  jobs:
   build:
