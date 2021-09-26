@@ -1,0 +1,17 @@
+ name: site-security-Full-scan
+ on: 
+   push:
+    branches: [ main ]
+   pull_request:
+    branches: [ main ]
+   
+ jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: OWASP ZAP Full Scan
+  # You may pin to the exact commit or the version.
+  # uses: zaproxy/action-baseline@3aac1ff9578859a12d8b84c035f4e5394fe79f61
+      uses: zaproxy/action-full-scan@v0.3.0
+      with:
+       target:  "https://www.google.com/"
