@@ -9,6 +9,10 @@
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+          ref: main
     - name: OWASP ZAP Baseline Scan
   # You may pin to the exact commit or the version.
   # uses: zaproxy/action-baseline@3aac1ff9578859a12d8b84c035f4e5394fe79f61
