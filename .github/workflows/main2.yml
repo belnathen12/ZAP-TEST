@@ -14,5 +14,5 @@
   # zaproxy/action-full-scan@v0.3.0
       uses: zaproxy/action-full-scan@1f35897c4c11af6b1203c36b67a5ba99c3c5b5f4
       with:
-       docker_name: owasp/zap2docker-weekly
+       docker_name: owasp/zap2docker-bare
        target:  "https://www.google.com/"
